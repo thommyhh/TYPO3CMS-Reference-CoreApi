@@ -22,15 +22,15 @@ emptied.
 
 ..  note::
     ..  versionchanged:: 13.0
-    The event is even dispatched in case the canonical tag generation is
-    disabled via TypoScript
-    (:ref:`disableCanonical <t3tsref:setup-config-disableCanonical>`) or via
-    the page property :sql:`no_index`. If disabled, the
-    :php:`\TYPO3\CMS\Seo\Exception\CanonicalGenerationDisabledException` is
-    thrown. The exception is caught and transferred to the event, allowing
-    listeners to determine whether the generation is disabled, using the
-    :php:`getCanonicalGenerationDisabledException()` method, which either
-    returns the exception with the corresponding reason or :php:`null`.
+        The event is even dispatched in case the canonical tag generation is
+        disabled via TypoScript
+        (:ref:`disableCanonical <t3tsref:setup-config-disableCanonical>`) or via
+        the page property :sql:`no_index`. If disabled, the
+        :php:`\TYPO3\CMS\Seo\Exception\CanonicalGenerationDisabledException` is
+        thrown. The exception is caught and transferred to the event, allowing
+        listeners to determine whether the generation is disabled, using the
+        :php:`getCanonicalGenerationDisabledException()` method, which either
+        returns the exception with the corresponding reason or :php:`null`.
 
 Example
 =======
